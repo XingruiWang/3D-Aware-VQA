@@ -1,0 +1,3 @@
+[submodule "superclevr-3D-question"]
+	path = superclevr-3D-question
+	url = git@github.com:XingruiWang/superclevr-3D-question.git
