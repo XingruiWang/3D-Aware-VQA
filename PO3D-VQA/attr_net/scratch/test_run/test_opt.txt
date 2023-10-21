@@ -1,0 +1,25 @@
+| options
+batch_size: 64
+bbox_mode: XYWH
+clevr_mini_ann_path: ../../data/attr_net/objects/clevr_mini_objs.json
+clevr_mini_img_dir: ../../data/raw/CLEVR_mini/images
+concat_img: 1
+dataset: superclevr
+gpu_ids: [0]
+img_dir: /home/xingrui/vqa/super-clevr-gen/output/ver_mask_new/images
+learning_rate: 0.002
+load_checkpoint_path: None
+load_path: /home/xingrui/vqa/superclevr-NSVQA/data/attr_net/outputs/trained_model/checkpoint_best.pt
+multiple_dataset: False
+num_workers: 1
+obj_ann_path: None
+output_file: data/scene_pred-nemo.json
+pred_bbox: /home/xingrui/vqa/nemo_superclevr_copy/output/json/0424_15000/pred_prob.json
+resume: 
+run_dir: scratch/test_run
+scene_path: None
+shuffle_data: 1
+split: test
+split_id: 3500
+type: object
+use_aug_ds: False
