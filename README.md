@@ -1,7 +1,7 @@
 
 # 3D-Aware Visual Question Answering about Parts, Poses and Occlusions (NeurIPS 2023)
 
-[paper](https://arxiv.org/abs/2310.17914) / slides
+[paper](https://arxiv.org/abs/2310.17914) / [dataset](https://github.com/XingruiWang/superclevr-3D-question/tree/main) / slides
 
 <div align="center">
     <img src="./imgs/neurips2023.png" alt="Editor" width="80%">
