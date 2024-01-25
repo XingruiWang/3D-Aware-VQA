@@ -1,7 +1,19 @@
-
-# 3D-Aware Visual Question Answering about Parts, Poses and Occlusions (NeurIPS 2023)
-
-[paper](https://arxiv.org/abs/2310.17914) / [dataset](https://github.com/XingruiWang/superclevr-3D-question/tree/main) / slides
+<h1 align="center"> 
+    <a href='https://arxiv.org/abs/2310.17914'>3D-Aware Visual Question Answering about Parts, Poses and Occlusions (NeurIPS 2023)
+    </a>
+</h1>
+<h3 align="center">
+    <a href='https://arxiv.org/abs/2310.17914'>Xingrui Wang</a>,
+    <a href='https://wufeim.github.io/'>Wufei Ma</a>,
+    <a href='https://lizw14.github.io/'>Zhuowan Li</a>,
+    <a href='https://gvrl.mpi-inf.mpg.de/'>Adam Kortylewski</a>,
+    <a href='https://www.cs.jhu.edu/~ayuille/'>Alan Yuille</a>
+</h3>
+<h3 align="center">
+    <a href='https://arxiv.org/abs/2310.17914'>Arxiv</a> / 
+    <a href='https://github.com/XingruiWang/superclevr-3D-question'>Dataset</a> /
+    <a href='https://github.com/XingruiWang/3D-Aware-VQA?tab=readme-ov-file#citation'>Bibtex</a>
+</h3>
 
 <div align="center">
     <img src="./imgs/neurips2023.png" alt="Editor" width="80%">
