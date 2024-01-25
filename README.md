@@ -3,7 +3,7 @@
     </a>
 </h1>
 <h4 align="center">
-    <a href='https://arxiv.org/abs/2310.17914'>Xingrui Wang</a>,
+    <a href='https://xingruiwang.github.io/'>Xingrui Wang</a>,
     <a href='https://wufeim.github.io/'>Wufei Ma</a>,
     <a href='https://lizw14.github.io/'>Zhuowan Li</a>,
     <a href='https://gvrl.mpi-inf.mpg.de/'>Adam Kortylewski</a>,
