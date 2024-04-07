@@ -1,6 +1,7 @@
 data
 output
 debug
+wandb/
 6D_pose_estimator/debug
 **/*.pth
 **/__pycache__
