@@ -12,7 +12,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from torchvision import transforms
 import wandb
-from yan.exp import Logger
+# from yan.exp import Logger
 
 from src.datasets import SuperCLEVRTrain, ToTensor, Normalize, InfiniteSampler
 from src.models import NearestMemoryManager, NetE2E, mask_remove_near
@@ -38,7 +38,7 @@ def parse_args():
     parser.add_argument('--max_group', type=int, default=512)
 
     # Data args
-    parser.add_argument('--mesh_path', type=str, default='/home/wufeim/nemo_superclevr/CAD_cate')
+    parser.add_argument('--mesh_path', type=str, default='CAD_cate')
     parser.add_argument('--dataset_path', type=str, default='/home/wufeim/nemo_superclevr/superclevr/superclevr')
     parser.add_argument('--partial_train', type=float, default=1.0)
     parser.add_argument('--filename_prefix', type=str, default='superCLEVR')
@@ -102,7 +102,9 @@ def train_one_step(net, memory_bank, train_iterator, criterion, optimizer, args,
     y_num = args.n
     index = torch.Tensor([[k for k in range(y_num)]] * img.shape[0])
     index = index.cuda()
-
+    import ipdb
+    ipdb.set_trace()
+    # obj_mask, kp
     features = net.forward(img, keypoint_positions=kp, obj_mask=1-obj_mask.float())
 
     get, y_idx, noise_sim = memory_bank(features, index, kpvis)
@@ -138,7 +140,7 @@ def main():
     wandb.run.name = f'{args.exp_name}_{wandb.run.id}'
     wandb.run.save()
 
-    yan = Logger('path')
+    # yan = Logger('path')
     msg = [f'Experiment {args.exp_name} has finished.',
            'The experiment arguments are summarized below:',
            str(vars(args)),
@@ -226,10 +228,10 @@ def main():
                 param_group['lr'] = lr
             logging.info(f'update learning rate: {args.lr} -> {lr}')
     
-    state, msg = yan.send_message(
-        f'Experiment {args.exp_name} completed!',
-        msg
-    )
+    # state, msg = yan.send_message(
+    #     f'Experiment {args.exp_name} completed!',
+    #     msg
+    # )
 
 
 if __name__ == '__main__':
